@@ -1,5 +1,8 @@
 all: prog
 
+test:
+	./prog
+
 prog: prog.c
 
 prog.c:
