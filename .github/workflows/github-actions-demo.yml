@@ -41,9 +41,9 @@ jobs:
         run: |
           gcc prog.c -o prog $FLAGS
           ./prog
-        if: ${{ matrix.os != "windows-latest" }}
+        if: ${{ matrix.os != windows-latest }}
       - name: Compile and run prog (windows)
         run: |
           gcc prog.c -o prog $FLAGS
           .\prog
-        if: ${{ matrix.os == "windows-latest" }}
+        if: ${{ matrix.os == windows-latest }}
