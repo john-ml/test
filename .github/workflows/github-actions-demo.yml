@@ -26,3 +26,15 @@ jobs:
         run: |
           make
           make test
+  'Build and run prog':
+    strategy:
+      matrix:
+        os: ubuntu-latest
+        #x: [0, 1]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v2
+      - name: Compile and run prog
+        run: |
+          make
+          make test
