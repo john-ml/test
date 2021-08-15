@@ -5,7 +5,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest, macos-latest]
-        x: [0, 1]
+        #x: [0, 1]
     runs-on: ${{ matrix.os }}
     steps:
       - run: echo "x = ${{ matrix.x }}, GITHUB_WORKSPACE = $GITHUB_WORKSPACE, GITHUB_ENV = $GITHUB_ENV"
