@@ -4,8 +4,8 @@ jobs:
   Explore-GitHub-Actions:
     strategy:
       matrix:
-        - os: [ubuntu-latest, macos-latest]
-        - x: [0, 1]
+        os: [ubuntu-latest, macos-latest]
+        x: [0, 1]
     runs-on: ${{ matrix.os }}
     steps:
       - run: echo "x = ${{ matrix.x }}"
