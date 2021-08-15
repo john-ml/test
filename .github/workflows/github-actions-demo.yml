@@ -20,3 +20,6 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
+      - name: Compile and run prog
+        run: |
+          make
