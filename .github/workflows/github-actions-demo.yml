@@ -20,6 +20,8 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
+      - name: Print working directory
+        run: pwd
       - name: Compile and run prog
         run: |
           make
