@@ -29,7 +29,7 @@ jobs:
   'Build and run prog':
     strategy:
       matrix:
-        os: ubuntu-latest
+        os: [ubuntu-latest]
         #x: [0, 1]
     runs-on: ${{ matrix.os }}
     steps:
