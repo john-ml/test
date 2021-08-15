@@ -25,4 +25,4 @@ jobs:
       - name: Compile and run prog
         run: |
           make
-          make test
+          $GITHUB_WORKSPACE/prog
