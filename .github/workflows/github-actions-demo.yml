@@ -26,7 +26,7 @@ jobs:
         run: |
           make
           make test
-  'Build and run prog':
+  build-and-run-prog:
     strategy:
       matrix:
         os: [ubuntu-latest]
