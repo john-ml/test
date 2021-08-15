@@ -34,7 +34,10 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v2
+      - name: Set environment variables
+        run: |
+          echo FLAGS=-O2 >> $GITHUB_ENV
       - name: Compile and run prog
         run: |
-          make
-          make test
+          gcc prog.c -o prog $FLAGS
+          ./prog
